@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Grove-Guardians-Web/logo.svg" />
+    <link rel="apple-touch-icon" href="/Grove-Guardians-Web/icon-192.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4A6518" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Lichterhelden" />
+    <meta name="application-name" content="Helden des Lichterwaldes" />
+    <title>Helden des Lichterwaldes</title>
+    <script>
+      /**
+       * Restores the intended path after the GitHub Pages 404.html redirect.
+       * The 404.html encodes the original path as "/?/<path>"; this script
+       * converts it back to a proper URL via history.replaceState before React mounts.
+       */
+      (function () {
+        var redirect = window.location.search.slice(1);
+        if (redirect.startsWith('/')) {
+          var decoded = redirect.replace(/~and~/g, '&').replace(/^\/?/, '');
+          var base = window.location.pathname; // e.g. /blockly-test/
+          history.replaceState(null, null, base + decoded + window.location.hash);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/Grove-Guardians-Web/assets/index-D7iUTgWR.js"></script>
+    <link rel="modulepreload" crossorigin href="/Grove-Guardians-Web/assets/vendor-D4SIQPNx.js">
+    <link rel="modulepreload" crossorigin href="/Grove-Guardians-Web/assets/vendor-react-DXUQMs69.js">
+    <link rel="modulepreload" crossorigin href="/Grove-Guardians-Web/assets/vendor-ui-C2qV9AWe.js">
+    <link rel="modulepreload" crossorigin href="/Grove-Guardians-Web/assets/vendor-blockly-DuIubxbE.js">
+    <link rel="stylesheet" crossorigin href="/Grove-Guardians-Web/assets/vendor-DCGwZphf.css">
+    <link rel="stylesheet" crossorigin href="/Grove-Guardians-Web/assets/index-BhZr1eh6.css">
+  <link rel="manifest" href="/Grove-Guardians-Web/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/Grove-Guardians-Web/registerSW.js"></script></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
