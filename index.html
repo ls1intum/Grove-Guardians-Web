@@ -22,7 +22,7 @@
         var redirect = window.location.search.slice(1);
         if (redirect.startsWith('/')) {
           var decoded = redirect.replace(/~and~/g, '&').replace(/^\/?/, '');
-          var base = window.location.pathname; // e.g. /blockly-test/
+          var base = window.location.pathname;
           history.replaceState(null, null, base + decoded + window.location.hash);
         }
       })();
