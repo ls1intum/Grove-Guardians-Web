@@ -14,4 +14,4 @@ artifacts.
 
 - **Live Demo:** https://ls1intum.github.io/Grove-Guardians-Web/
 - **Source Code:** https://github.com/ls1intum/Grove-Guardians
-- **Teacher Documentation:** https://github.com/ls1intum/Grove-Guardians-Web/wiki
+- **Teacher Documentation:** https://github.com/ls1intum/Grove-Guardians-Web/wiki/Lehrkraft‐Doku
